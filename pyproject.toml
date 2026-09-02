@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-organizer-cli"
+version = "1.0.0"
+description = "Sort a messy folder into category subfolders, with dry-run preview and undo."
+requires-python = ">=3.10"
+
+[project.scripts]
+organizer = "organizer.cli:main"
+
+[tool.setuptools]
+packages = ["organizer"]
